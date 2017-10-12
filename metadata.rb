@@ -15,6 +15,6 @@ supports 'centos'
 supports 'fedora'
 
 depends 'apt'
-depends 'nodejs', '~> 2.4'
+depends 'nodejs', '>= 2.4'
 depends 'user'
 depends 'logrotate'
