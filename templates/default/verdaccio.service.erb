@@ -4,7 +4,7 @@
 Description=Verdaccio NPM cache & private repo server
 
 [Service]
-ExecStart=/usr/bin/verdaccio -c <%= File.join(node['verdaccio']['confdir'], 'config.yaml') %>
+ExecStart=/usr/local/bin/verdaccio -c <%= File.join(node['verdaccio']['confdir'], 'config.yaml') %>
 Type=simple
 User=verdaccio
 Group=verdaccio
