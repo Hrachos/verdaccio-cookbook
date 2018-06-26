@@ -89,3 +89,8 @@ no_proxy: <%= node['verdaccio']['proxy']['no_proxy'].join(',') %>
 
 max_body_size: <%= node['verdaccio']['max_body_size'] %>
 <% end %>
+
+<% if node['verdaccio']['custom_config'] %>
+<% require 'yaml' %>
+<% node['verdaccio']['custom_config'].to_yaml %>
+<% end %>
